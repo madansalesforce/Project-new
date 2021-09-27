@@ -1,0 +1,47 @@
+<template>
+   
+    <lightning-card title="Guest Entry Form" icon-name="custom:custom18"> 
+        
+        <div class="slds-p-around_x-small">
+           
+                    <lightning-input type=text label="First Name" name="FirstName" required value={GuestFirstname} onchange={HandleCHange}></lightning-input>
+                  
+                  
+                    <lightning-input  type=text label="Last Name" name="LastName" required value={GuestLastName} onchange={HandleCHange}></lightning-input>
+                
+                 
+                    <lightning-input  type=phone label="Phone" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value={GuestPhone} onchange={HandleCHange}></lightning-input>
+                  
+                
+                    <lightning-input type=email label="Email"  name="Email" maxlength="50" placeholder="username@gmail.com" value={GuestEmail} onchange={HandleCHange}></lightning-input>
+               
+              
+                    <lightning-input type=number label="Number of Adults(12yrs+)" name="NoofAdults" max-length="2" ></lightning-input>
+              
+              
+                    <lightning-input type=number label="Number of Children(0-12yrs)" name="NoofChildren" max-length="2" ></lightning-input>
+               
+              
+                    <lightning-input type=datetime label="Check In Date" name="CheckInDate" ></lightning-input>
+              
+              
+                    <lightning-input type=datetime label="Check Out Date" name="CheckoutDate" ></lightning-input>
+              
+               
+                    <lightning-input type=text label="City of Hotel" name="HotelCity" value={GuestHotelCity} onchange={HandleCHange}></lightning-input>
+              
+              
+                    <lightning-input type=text label="Preferred Hotel Type(3 star, 4 star, 5 star)" name="HotelStar"  value={GuestHotelStar} onchange={HandleCHange}></lightning-input> 
+              
+           <lightning-output-field >{error}</lightning-output-field>
+
+         <c-hotelListingComponent hotelcity={GuestHotelCity} hotelstar={GuestHotelStar} ></c-hotelListingComponent> 
+                                                     
+        </div>   
+        <br> <br>
+        <lightning-button variant="brand" label="Submit" onclick={SubmitAction} style="padding-left: 0.75rem;">    </lightning-button> 
+        <lightning-button label="Cancel" variant="brand" onclick={cancelAction} style="padding-left: 0.75rem;">  </lightning-button>  
+      </lightning-card>
+    </template>
+       
+   

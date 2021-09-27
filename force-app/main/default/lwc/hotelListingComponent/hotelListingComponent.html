@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="List OF Hotels Form" icon-name="custom:custom32"> 
+    <div class="slds-p-bottom_large slds-p-left_large" style="width:500px">
+
+    <lightning-button variant="brand" label="Select" onclick={SelectAction} style="padding-left: 0.75rem;">    </lightning-button> 
+    <br><br>
+
+         
+
+    <lightning-input type=checkbox label="WIFI Availability" name="WIFI Availability" value={Wifi} onchange={CHangeHandler1}></lightning-input>
+    <lightning-input type=checkbox label="Cancellation Availability" name="Cancellation Availability" value={cancellation} onchange={CHangeHandler1}></lightning-input>
+    <lightning-input type=checkbox label="Cash pay Availability" name="Cash pay Availability" value={cashpay} onchange={CHangeHandler1}></lightning-input>
+
+  </div>  
+    </lightning-card>
+</template>

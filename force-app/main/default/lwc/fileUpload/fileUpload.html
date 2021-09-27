@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="LWC Uploading Files" label="custom:custom4">
+
+       
+        <lightning-file-upload
+        label="Attach File"
+        name="File Uploader"
+        accept={acceptedFormats}
+        record-id={recordId}
+        onuploadfinished={handleUploadfinished}
+        multiple></lightning-file-upload>
+
+        Please Upload the files here
+
+    </lightning-card>
+    
+</template>

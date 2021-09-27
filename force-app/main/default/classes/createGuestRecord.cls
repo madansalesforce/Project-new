@@ -23,4 +23,6 @@ public with sharing class createGuestRecord {
             insert GuestObj;
             return GuestObj;
       }
+
+      
 }

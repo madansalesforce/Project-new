@@ -41,6 +41,7 @@ SubmitAction(){
     InsertGuestFields({GFName:this.GuestFirstname,GLName:this.GuestLastName,GPhone:this.GuestPhone,GEmail:this.GuestEmail})
     InsertHotelFields({GHotelCity:this.GuestHotelCity,GHotelType:this.GuestHotelStar})
   
+
     .then(result =>{
         this.message= result;
         const toastEvent = new ShowToastEvent({

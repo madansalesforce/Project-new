@@ -9,7 +9,7 @@ global class batchclass implements Database.Batchable<SObject>,Database.Stateful
 
     global void execute(Database.BatchableContext BC, List<Account> scope) {
 
-      
+      //hello
         for(Account a : scope) {
 
            if(a.description == 'Not Available')

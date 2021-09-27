@@ -1,0 +1,53 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0055e00000360bNAAQ",
+      "createdByName": "Shekhar G",
+      "createdDate": "2021-06-29T01:07:42.000Z",
+      "fileName": "approvalProcesses/Training_Deal__c.java_script_approval123.approvalProcess",
+      "fullName": "Training_Deal__c.java_script_approval123",
+      "id": "04a5e0000000IqMAAU",
+      "lastModifiedById": "0055e00000360bNAAQ",
+      "lastModifiedByName": "Shekhar G",
+      "lastModifiedDate": "2021-06-29T01:11:33.000Z",
+      "type": "ApprovalProcess"
+    },
+    {
+      "createdById": "0055e00000360bNAAQ",
+      "createdByName": "Shekhar G",
+      "createdDate": "2021-06-28T21:24:07.000Z",
+      "fileName": "approvalProcesses/Training_Deal__c.java_script_approval_process.approvalProcess",
+      "fullName": "Training_Deal__c.java_script_approval_process",
+      "id": "04a5e0000000IpsAAE",
+      "lastModifiedById": "0055e00000360bNAAQ",
+      "lastModifiedByName": "Shekhar G",
+      "lastModifiedDate": "2021-06-28T23:33:05.000Z",
+      "type": "ApprovalProcess"
+    },
+    {
+      "createdById": "0055e00000360bNAAQ",
+      "createdByName": "Shekhar G",
+      "createdDate": "2021-06-28T23:36:04.000Z",
+      "fileName": "approvalProcesses/Training_Deal__c.java_script_approval.approvalProcess",
+      "fullName": "Training_Deal__c.java_script_approval",
+      "id": "04a5e0000000IqCAAU",
+      "lastModifiedById": "0055e00000360bNAAQ",
+      "lastModifiedByName": "Shekhar G",
+      "lastModifiedDate": "2021-06-29T01:07:53.000Z",
+      "type": "ApprovalProcess"
+    },
+    {
+      "createdById": "0055e00000360bNAAQ",
+      "createdByName": "Shekhar G",
+      "createdDate": "2021-06-28T20:24:44.000Z",
+      "fileName": "approvalProcesses/Training_Deal__c.Java_with_more_than_30_percent_discount.approvalProcess",
+      "fullName": "Training_Deal__c.Java_with_more_than_30_percent_discount",
+      "id": "04a5e0000000IpnAAE",
+      "lastModifiedById": "0055e00000360bNAAQ",
+      "lastModifiedByName": "Shekhar G",
+      "lastModifiedDate": "2021-06-29T01:06:21.000Z",
+      "type": "ApprovalProcess"
+    }
+  ]
+}

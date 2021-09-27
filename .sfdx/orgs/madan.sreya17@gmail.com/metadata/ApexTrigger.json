@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0055e00000360bNAAQ",
+    "createdByName": "Shekhar G",
+    "createdDate": "2021-07-12T19:06:11.000Z",
+    "fileName": "triggers/TrainTrigger.trigger",
+    "fullName": "TrainTrigger",
+    "id": "01q5e0000002BKoAAM",
+    "lastModifiedById": "0055e00000360bNAAQ",
+    "lastModifiedByName": "Shekhar G",
+    "lastModifiedDate": "2021-07-12T19:06:42.000Z",
+    "manageableState": "unmanaged",
+    "type": "ApexTrigger"
+  }
+}

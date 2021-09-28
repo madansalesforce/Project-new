@@ -4,6 +4,7 @@ import InsertGuestFields from '@salesforce/apex/createGuestRecord.InsertGuestFie
 import InsertHotelFields from '@salesforce/apex/createGuestRecord.InsertHotelFields';
 import { NavigationMixin } from 'lightning/navigation';
 
+
  export default class GuestEntryForm extends NavigationMixin(LightningElement) {
 
 @track GuestFirstname;

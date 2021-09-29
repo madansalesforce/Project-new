@@ -1,4 +1,4 @@
-import { LightningElement,api, track } from 'lwc';
+ import { LightningElement,api, track } from 'lwc';
 import Hotellist from '@salesforce/apex/hotellist.Hotellist';
 
 export default class HotelListingComponent extends LightningElement {
@@ -21,7 +21,7 @@ export default class HotelListingComponent extends LightningElement {
         }
     }
     SelectAction(){
-        Hotellist();
+       Hotellist();
 
     }
-}
+} 

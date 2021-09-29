@@ -1,22 +1,26 @@
-public class emailClass {
-   
-          public static void EmailDemo2(){
-          string Guest_Email__c;
-            Messaging.SingleEmailMessage email=new messaging.singleemailmessage();
-            string[] to= new string[] {Guest_Email__c};
-          
-             
-            if(Guest_Email__c!=null && Guest_Email__c!='')    
-            email.setToaddresses(to);
-            email.setsubject('congrats');
-            email.sethtmlbody('dear customer');
-            
-            try{
-                Messaging.sendemail(new messaging.singleemailmessage[] {email});
-            }catch(exception e){
-                system.debug('error message='  +e.getMessage());
-            }
-            Guest_Email__c='';
-            
+public with sharing class emailClass {
+    @AuraEnabled
+    public static void sendEmail(List<String> toAddress, String subject, String body) {      
+        Messaging.reserveSingleEmailCapacity(1);
+        try{
+        messaging.SingleEmailMessage mail = new messaging.SingleEmailMessage();
+        
+        System.debug(toAddress);
+        System.debug(body);
+        System.debug(subject);
+        
+                
+        mail.setToAddresses(toAddress);
+        mail.setReplyTo('no-reply@hotelmj.com');
+        mail.setSenderDisplayName('HotelMJ');
+        mail.setSubject(subject);
+        mail.setHtmlBody(body);
+        
+        Messaging.sendEmail(new List<messaging.SingleEmailMessage> {mail});
+        }
+        catch (exception e){
+            throw new AuraHandledException(e.getMessage());
+            //return null;
         }
     }
+}

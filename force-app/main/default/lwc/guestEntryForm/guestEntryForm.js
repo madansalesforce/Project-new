@@ -1,7 +1,8 @@
-import { LightningElement, track} from 'lwc';
+import { LightningElement, track, wire} from 'lwc';
 import {ShowToastEvent} from 'lightning/platformShowToastEvent';
 import InsertGuestFields from '@salesforce/apex/createGuestRecord.InsertGuestFields';
 import InsertHotelFields from '@salesforce/apex/createGuestRecord.InsertHotelFields';
+import sendEmail from '@salesforce/apex/emailClass.sendEmail';
 import { NavigationMixin } from 'lightning/navigation';
 
 
@@ -28,7 +29,7 @@ HandleCHange(event) {
     }
     if(event.target.name!= null && event.target.name == 'Email'){
         this.GuestEmail = event.target.value;
-    }
+       }
     if(event.target.name!= null && event.target.name == 'HotelCity'){
         this.GuestHotelCity = event.target.value;
     }
@@ -41,7 +42,7 @@ SubmitAction(){
     
     InsertGuestFields({GFName:this.GuestFirstname,GLName:this.GuestLastName,GPhone:this.GuestPhone,GEmail:this.GuestEmail})
     InsertHotelFields({GHotelCity:this.GuestHotelCity,GHotelType:this.GuestHotelStar})
-  
+    sendEmail({toAddress:this.GuestEmail, subject:'Booking Details', body:'Awesome!'})
 
     .then(result =>{
         this.message= result;
